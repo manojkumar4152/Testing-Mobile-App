@@ -1,4 +1,4 @@
-import 'package:brrmobileapp/Screens/Home/homepage.dart';
+
 import 'package:flutter/material.dart';
 
 import '../sidenavigationbar.dart';
@@ -18,7 +18,7 @@ class About extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                      builder: (context) => HomePage()),
+                      builder: (context) => SideMenuBar()),
                 );
               },
               child:   Image.asset("assets/about.png"),
