@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       ),
 
        */
-      home: Splash(),
+      home: SplashScreen(),
 
     );
   }
