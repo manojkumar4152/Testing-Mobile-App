@@ -1,3 +1,4 @@
+import 'package:brrmobileapp/screens/home/homepage.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
       ),
 
        */
-      home: Splash(),
+      home: HomePage(),
 
     );
   }
