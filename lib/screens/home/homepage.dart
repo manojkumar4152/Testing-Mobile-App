@@ -1,3 +1,4 @@
+import 'package:brrmobileapp/screens/Contact/contact.dart';
 import 'package:flutter/material.dart';
 class HomePage extends StatefulWidget {
   @override
@@ -61,7 +62,12 @@ class _HomePageState extends State<HomePage> {
                                         )),
                                   ),
                                 ),
-                                onTap: () => print("Icons"),
+                                onTap: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(builder: (context) => MyCustomForm()),
+                                  );
+                                }
                               ),
                               Text(e["name"]),
                             ],
