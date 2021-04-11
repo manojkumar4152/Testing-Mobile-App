@@ -10,10 +10,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'BRR Mobile Application',
+      /*
+      theme: ThemeData(
+        scaffoldBackgroundColor: Colors.yellowAccent,
+      ),
 
-
+       */
       home: SideMenuBar(),
-
 
     );
   }
