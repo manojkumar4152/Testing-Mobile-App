@@ -1,5 +1,7 @@
-import 'package:brrmobileapp/Screens/sidenavigationbar.dart';
+
+import 'package:brrmobileapp/screens/splash/splash.dart';
 import 'package:flutter/material.dart';
+
 
 void main() => runApp(MyApp());
 
@@ -10,13 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'BRR Mobile Application',
-      /*
-      theme: ThemeData(
-        scaffoldBackgroundColor: Colors.yellowAccent,
-      ),
-
-       */
-      home: SideMenuBar(),
+      home: Splash(),
 
     );
   }
