@@ -1,4 +1,4 @@
-import 'package:brrmobileapp/screens/home/homepage.dart';
+import 'package:brrmobileapp/Screens/sidenavigationbar.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -11,7 +11,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'BRR Mobile Application',
 
-      home: HomePage(),
+
+      home: SideMenuBar(),
+
 
     );
   }

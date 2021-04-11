@@ -1,29 +1,22 @@
+import 'package:brrmobileapp/Screens/Home/homepage.dart';
 import 'package:flutter/material.dart';
 
+import 'About/aboutus.dart';
+import 'Contact/contact.dart';
+import 'Covid19/covid19.dart';
 class SideMenuBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      //) Scaffold(
       appBar: AppBar(
-        title: Text(
-          'BRR SOFTWARES',
-          style: TextStyle(color: Colors.orange),
-        ),
-        centerTitle: true,
-        backgroundColor: Colors.amber,
 
+      backgroundColor: Colors.deepOrange,
+      title: Text("BRR Softwares"),
+      actions: [
+        Icon(Icons.notifications),
 
-
-      ),
-
-      body: Center(
-        child: Text(
-          'HELLO BRR',
-          style: TextStyle(color: Colors.blue),
-        ),
-      ),
-
+      ],
+    ),
       drawer: Drawer(
         child: ListView(
 
@@ -80,10 +73,10 @@ class SideMenuBar extends StatelessWidget {
                 leading:
                 Icon(Icons.contact_page, color: Colors.black, size: 20.0),
                 onTap: (){
-                /*  Navigator.of(context).push(
+                  Navigator.of(context).push(
                     MaterialPageRoute(builder: (context) => About()),
 
-                  );*/
+                  );
                 }
             ),
             ListTile(
@@ -111,7 +104,7 @@ class SideMenuBar extends StatelessWidget {
                     SizedBox(height: 10.0,),
                     GestureDetector(
                       onTap: (){
-                      /*  Navigator.of(context).push(
+                        /*  Navigator.of(context).push(
                           MaterialPageRoute(builder: (context) => Join()),
 
                         );
@@ -123,7 +116,7 @@ class SideMenuBar extends StatelessWidget {
                     SizedBox(height: 10.0,),
                     GestureDetector(
                       onTap: (){
-                      /*  Navigator.of(context).push(
+                        /*  Navigator.of(context).push(
                           MaterialPageRoute(builder: (context) => LOGIN()),
 
                         );
@@ -136,7 +129,7 @@ class SideMenuBar extends StatelessWidget {
                     GestureDetector(
                       onTap: (){
 
-                      /*  Navigator.of(context).push(
+                        /*  Navigator.of(context).push(
                           MaterialPageRoute(builder: (context) => LOGIN()),
 
                         );
@@ -149,7 +142,7 @@ class SideMenuBar extends StatelessWidget {
                     SizedBox(height: 10.0,),
                     GestureDetector(
                       onTap: (){
-                      /*  Navigator.of(context).push(
+                        /*  Navigator.of(context).push(
                           MaterialPageRoute(builder: (context) => LOGIN()),
 
                         );
@@ -171,11 +164,11 @@ class SideMenuBar extends StatelessWidget {
                 style: TextStyle(color: Colors.black, fontSize: 20),
               ),
               onTap: () {
-              /*  Navigator.of(context).push(
+                Navigator.of(context).push(
                   MaterialPageRoute(builder: (context) => Covid19()),
                 );
 
-               */
+
               },
               leading: Icon(Icons.masks, color: Colors.black, size: 20.0),
             ),
@@ -184,6 +177,15 @@ class SideMenuBar extends StatelessWidget {
                 'Contact',
                 style: TextStyle(color: Colors.black, fontSize: 20),
               ),
+              onTap: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) =>  MyCustomForm()),
+
+                );
+
+
+              },
+
               leading:
               Icon(Icons.phone, color: Colors.black, size: 20.0),
 
@@ -225,6 +227,11 @@ class SideMenuBar extends StatelessWidget {
           ],
         ),
       ),
+      body: HomePage(),
     );
   }
 }
+
+
+
+
