@@ -1,3 +1,5 @@
+
+
 import 'package:brrmobileapp/Screens/Home/homepage.dart';
 import 'package:flutter/material.dart';
 
@@ -79,6 +81,7 @@ class SideMenuBar extends StatelessWidget {
                   );
                 }
             ),
+
             ListTile(
 
               title: Text(
@@ -99,62 +102,61 @@ class SideMenuBar extends StatelessWidget {
               Icon(Icons.business_center_rounded, color: Colors.black, size: 20.0),
               trailing:Icon(Icons.arrow_drop_down_outlined, color: Colors.black, size: 30.0,),
               children: [
-                Column(
-                  children:[
-                    SizedBox(height: 10.0,),
-                    GestureDetector(
-                      onTap: (){
-                        /*  Navigator.of(context).push(
-                          MaterialPageRoute(builder: (context) => Join()),
+                ListTile(
+                  title: Text(
+                    'Join Us',
+                    style: TextStyle(color: Colors.black, fontSize: 15,fontWeight: FontWeight.bold),
+                 textAlign: TextAlign.start,  ),
+                    onTap: (){
+                      Navigator.of(context).push(
+                        MaterialPageRoute(builder: (context) => About()),
 
-                        );
+                      );
+                    }
 
-                       */
-                      },
-                      child: Text("Join Us",style: TextStyle(color: Colors.black,fontSize: 20.0),),
-                    ),
-                    SizedBox(height: 10.0,),
-                    GestureDetector(
-                      onTap: (){
-                        /*  Navigator.of(context).push(
-                          MaterialPageRoute(builder: (context) => LOGIN()),
-
-                        );
-
-                       */
-                      },
-                      child: Text("CBP-Uniqueness",style: TextStyle(color: Colors.black,fontSize: 20.0),),
-                    ),
-                    SizedBox(height: 10.0,),
-                    GestureDetector(
-                      onTap: (){
-
-                        /*  Navigator.of(context).push(
-                          MaterialPageRoute(builder: (context) => LOGIN()),
-
-                        );
-
-                       */
-                      },
-                      child: Text("CBP-BCA&BSc",style: TextStyle(color: Colors.black,fontSize: 20.0),),
-
-                    ),
-                    SizedBox(height: 10.0,),
-                    GestureDetector(
-                      onTap: (){
-                        /*  Navigator.of(context).push(
-                          MaterialPageRoute(builder: (context) => LOGIN()),
-
-                        );
-
-                       */
-                      },
-                      child: Text("New Openings",style: TextStyle(color: Colors.black,fontSize: 20.0),),
-                    ),
-
-                  ],
                 ),
-              ],
+                ListTile(
+                    title: Text(
+                        'CBP -Uniqueness',
+                      style: TextStyle(color: Colors.black, fontSize: 15,fontWeight: FontWeight.bold),
+                      textAlign: TextAlign.start, ),
+                    onTap: (){
+                      Navigator.of(context).push(
+                        MaterialPageRoute(builder: (context) => About()),
+
+                      );
+                    }
+
+                ),
+                ListTile(
+                    title: Text(
+                      'CBP -BCA&BSc',
+                      style: TextStyle(color: Colors.black, fontSize: 15,fontWeight: FontWeight.bold),
+                      textAlign: TextAlign.start,  ),
+                    onTap: (){
+                      Navigator.of(context).push(
+                        MaterialPageRoute(builder: (context) => About()),
+
+                      );
+                    }
+
+                ),
+                ListTile(
+                    title: Text(
+                      'New Openings',
+                      style: TextStyle(color: Colors.black, fontSize: 15,fontWeight: FontWeight.bold),
+                      textAlign: TextAlign.start,  ),
+                    onTap: (){
+                      Navigator.of(context).push(
+                        MaterialPageRoute(builder: (context) => About()),
+
+                      );
+                    }
+
+                ),
+
+
+        ],
 
             ),
 

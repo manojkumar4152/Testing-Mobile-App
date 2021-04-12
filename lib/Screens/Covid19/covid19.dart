@@ -20,7 +20,7 @@ class Covid19 extends StatelessWidget {
               },
 
 
-              child: Image.asset("assets/covid.jpg"),
+             // child: Image.asset("assets/covid.jpg"),
             ),
             SizedBox(height: 20.0,),
             Card(
