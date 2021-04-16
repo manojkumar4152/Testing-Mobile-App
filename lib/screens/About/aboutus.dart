@@ -8,11 +8,26 @@ class About extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
 
+       backgroundColor: Colors.grey[100],
 
-
-      body:  SingleChildScrollView(child: Column(
+      body:  SingleChildScrollView(
+        child:Container(
+        padding: EdgeInsets.all(20.0),
+        child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children:[
+            Container(
+              width: double.infinity,
+              height: 250,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20),
+                  image: DecorationImage(
+                      image: AssetImage('assets/about.png'),
+                      fit: BoxFit.cover
+                  )
+              ),
+
+              child:
             GestureDetector(
               onTap: (){
                 Navigator.push(
@@ -21,10 +36,18 @@ class About extends StatelessWidget {
                       builder: (context) => SideMenuBar()),
                 );
               },
-              child:   Image.asset("assets/about.png"),
+
+
+
+
+
+            ),
             ),
             SizedBox(height: 20.0,),
             Card(
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
+              ),
               child: Column(
                   children: [
                     Padding(
@@ -68,7 +91,9 @@ class About extends StatelessWidget {
                   ]),
             ),
             SizedBox(height: 10.0,),
-            Card(
+            Card( shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(10),
+            ),
               child: Column(
                 children: [
                   Padding(
@@ -116,6 +141,7 @@ class About extends StatelessWidget {
             ),
 
           ]
+      ),
       ),
       ),
 

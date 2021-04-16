@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'About/aboutus.dart';
 import 'Contact/contact.dart';
 import 'Covid19/covid19.dart';
+import 'Services/ourservices.dart';
 class SideMenuBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -62,7 +63,12 @@ class SideMenuBar extends StatelessWidget {
                 style: TextStyle(color: Colors.black, fontSize: 20),
               ),
               leading: Icon( Icons.home, color: Colors.black, size: 20.0),
+                onTap: (){
+                  Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) => HomePage()),
 
+                  );
+                }
 
             ),
 
@@ -90,6 +96,12 @@ class SideMenuBar extends StatelessWidget {
               ),
               leading: Icon(Icons.settings,
                   color: Colors.black, size: 20.0),
+              onTap: (){  Navigator.of(context).push(
+                MaterialPageRoute(builder: (context) => Services()),
+
+              );
+
+              },
             ),
 
 

@@ -7,7 +7,10 @@ class Covid19 extends StatelessWidget {
     return Scaffold(
       body: SingleChildScrollView(
 
-        child: Column(
+        child: Container(
+        padding: EdgeInsets.all(20.0),
+
+       child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children:[
             GestureDetector(
@@ -192,6 +195,7 @@ class Covid19 extends StatelessWidget {
           ],
 
         ),
+      ),
       ),
 
     );
