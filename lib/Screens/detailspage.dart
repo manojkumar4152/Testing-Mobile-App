@@ -4,7 +4,6 @@ import 'package:brrmobileapp/Screens/Services/ourservices.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import 'About/aboutus.dart';
 
 class Details extends StatelessWidget {
 
@@ -80,14 +79,14 @@ class Details extends StatelessWidget {
                SizedBox(height: 40,),
 
                   Column(
-                    children: [
+                     children: [
 
 
         Container(
           padding: const EdgeInsets.fromLTRB(10,10, 10,10),
 
         child:
-        Text(" ",
+        Text(" We can help you to develop a variety of software applications matching your business demands ",
           style: TextStyle(fontSize: 25.0,fontWeight: FontWeight.bold),
           textAlign: TextAlign.justify,
 

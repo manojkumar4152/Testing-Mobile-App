@@ -1,3 +1,4 @@
+import 'package:brrmobileapp/Screens/detailspage.dart';
 import 'package:brrmobileapp/Screens/sidenavigationbar.dart';
 import 'package:flutter/material.dart';
 
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
       ),
 
        */
-      home: SideMenuBar(),
+      home: Details(),
 
     );
   }

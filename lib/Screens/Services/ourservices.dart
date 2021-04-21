@@ -2,8 +2,6 @@
 import 'package:brrmobileapp/Screens/Covid19/covid19.dart';
 import 'package:brrmobileapp/Screens/detailspage.dart';
 import 'package:flutter/material.dart';
-import 'package:focused_menu/focused_menu.dart';
-import 'package:focused_menu/modals.dart';
 class Services extends StatefulWidget {
 
   @override
